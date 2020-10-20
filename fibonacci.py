@@ -33,6 +33,9 @@ def timer_decorator(func):
 # define Python user-defined exceptions
 class Error(Exception):
     """Base class for other exceptions"""
+    
+ class Error(Exception):
+    """Base class for other exceptions"""
 
 
 class ValueTooLargeError(Error):
@@ -109,6 +112,7 @@ def fib_formula(n):
     """
     seq_out = [0, 1]
     n = int(n)
+    n
     if _check_number_input(n, 2, 1000000):
         sqrt = Decimal(math.sqrt(5))
         phi_1 = Decimal(1 + sqrt) / Decimal(2)
@@ -118,8 +122,19 @@ def fib_formula(n):
                 Decimal(sqrt) ** Decimal(-1)
             )
             seq_out.append(int(temp_out))
+            seq_out.append(int(temp_out))
         return seq_out
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 if __name__ == "__main__":
     num = 20
